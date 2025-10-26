@@ -2,7 +2,7 @@
 #define LoraSerial Serial1  
 
 unsigned long lastSendTime = 0;
-const unsigned long sendInterval = 10000;
+const unsigned long sendInterval = 20000;
 const int targetAddress = 2;
 
 void setup() 
@@ -47,7 +47,7 @@ void loop()
     } 
     else if (in.length() > 0) 
     {
-      Serial.println("Invalid format. Use: ADDRESS#MESSAGE");
+      Serial.println("Invalid format...");
     }
   }
 
